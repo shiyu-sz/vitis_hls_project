@@ -3,35 +3,38 @@
 *.jou
 *.jou.*
 .Xil/
-/led_twinkle/.apc/
-/led_twinkle/.settings/
-/led_twinkle/.project
-/led_twinkle/.cproject
-/led_twinkle/.vitis_hls_log_all.xml
+/*/.apc/
+/*/.settings/
+/*/.project
+/*/.cproject
+/*/.vitis_hls_log_all.xml
 
 # HLS synthesis, simulation and exported IP products
-# Keep hls.app, solution1/script.tcl and solution1/directives.tcl.
-/led_twinkle/solution1/.autopilot/
-/led_twinkle/solution1/.debug/
-/led_twinkle/solution1/syn/
-/led_twinkle/solution1/impl/
-/led_twinkle/solution1/sim/
-/led_twinkle/solution1/csim/
-/led_twinkle/solution1/solution1.*
-/led_twinkle/solution1/solution1_*.json
+# Keep hls.app, solution*/script.tcl and solution*/directives.tcl.
+/*/solution*/.autopilot/
+/*/solution*/.debug/
+/*/solution*/.tcls/
+/*/solution*/syn/
+/*/solution*/impl/
+/*/solution*/sim/
+/*/solution*/csim/
+/*/solution*/solution*.aps
+/*/solution*/solution*.directive
+/*/solution*/solution*.funcunit
+/*/solution*/solution*_data.json
 
 # Vivado project caches and run products
-/led_twinkle/led_twinkle_ip_test/*.cache/
-/led_twinkle/led_twinkle_ip_test/*.gen/
-/led_twinkle/led_twinkle_ip_test/*.hw/
-/led_twinkle/led_twinkle_ip_test/*.ioplanning/
-/led_twinkle/led_twinkle_ip_test/*.ip_user_files/
-/led_twinkle/led_twinkle_ip_test/*.runs/
-/led_twinkle/led_twinkle_ip_test/*.sim/
+/*/*_ip_test/*.cache/
+/*/*_ip_test/*.gen/
+/*/*_ip_test/*.hw/
+/*/*_ip_test/*.ioplanning/
+/*/*_ip_test/*.ip_user_files/
+/*/*_ip_test/*.runs/
+/*/*_ip_test/*.sim/
 
 # Generated files alongside the block design
-/led_twinkle/led_twinkle_ip_test/*.srcs/**/*.bda
-/led_twinkle/led_twinkle_ip_test/*.srcs/**/ui/
+/*/*_ip_test/*.srcs/**/*.bda
+/*/*_ip_test/*.srcs/**/ui/
 
 # The expanded custom IP is referenced by the Vivado .xpr; its ZIP is redundant.
-/led_twinkle/led_twinkle_ip_test/ip_repo/*.zip
+/*/*_ip_test/ip_repo/*.zip
