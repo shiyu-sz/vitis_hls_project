@@ -1,0 +1,6 @@
+set_property PACKAGE_PIN F20 [get_ports {ap_rst[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {ap_rst[0]}]
+set_property PACKAGE_PIN U18 [get_ports ap_clk]
+set_property IOSTANDARD LVCMOS33 [get_ports ap_clk]
+set_property PACKAGE_PIN T14 [get_ports {led_0[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_0[0]}]
